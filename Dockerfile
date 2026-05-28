@@ -3,6 +3,7 @@ FROM pytorch/pytorch:2.11.0-cuda12.6-cudnn9-runtime
 ENV DEBIAN_FRONTEND=noninteractive \
     PYTHONUNBUFFERED=1 \
     PIP_NO_CACHE_DIR=1 \
+    PIP_BREAK_SYSTEM_PACKAGES=1 \
     HF_HUB_ENABLE_HF_TRANSFER=1
 
 WORKDIR /app
